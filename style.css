@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(93, 164, 185);
+}
+
+.board {
+    display: grid;
+    height: 350px;
+    width: 350px;
+    grid-template-columns: repeat(3, 1FR);
+    grid-template-rows: repeat(3, 1FR);
+    border: 1px solid black;
+    gap: 2px;
+    padding: 2px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(56, 84, 114);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.players {
+    display: flex;
+    gap: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: rgb(81, 105, 124);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0%;
+}
+
+.title {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.turn, .result {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
